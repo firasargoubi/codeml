@@ -5,6 +5,9 @@ import { Link } from 'react-scroll';
 import { Col, Row } from 'reactstrap';
 import './landing-hero-page.scss';
 
+const REGISTRATION_LINK =
+  'https://docs.google.com/forms/d/e/1FAIpQLSctJZEYjx8oTROyygyeGTppd8saPMvLELxliPYXlRYYM07z-w/viewform?usp=sf_link';
+
 const LandingHeroPage: React.FC = () => {
   const { t } = useTranslation();
   const [showParticles, setShowParticles] = useState(false);
@@ -53,13 +56,15 @@ const LandingHeroPage: React.FC = () => {
             </h1>
             <p className="subtitle">{t('LandingHeroPage.subtitle')}</p>
             <p className="subtitle"> {t('LandingHeroPage.when')} </p>
-              <button className="register">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSctJZEYjx8oTROyygyeGTppd8saPMvLELxliPYXlRYYM07z-w/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
-                {' '}
-                {t('LandingHeroPage.register')}{' '}
-      </a>
-
-              </button>
+            <button className="register">
+              <a
+                href={REGISTRATION_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('LandingHeroPage.register')}
+              </a>
+            </button>
           </Col>
           <Col
             sm={{ order: 'first' }}
