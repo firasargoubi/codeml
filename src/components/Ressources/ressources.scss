@@ -13,9 +13,21 @@
   align-items: center;
 }
 
-ul {
-  list-style-type: square;
+.ressources-slider {
+  .slick-slide {
+    padding: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+}
+
+.resource-card {
+  background-color: #111144;
   color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
