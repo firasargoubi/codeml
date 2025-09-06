@@ -8,7 +8,7 @@ import Ressources from '../Ressources/ressources';
 import Schedule from '../schedule/schedule';
 import { EVENTS } from '../schedule/schedule-data';
 import Speakers from '../speakers/speakers';
-import Partners from '../sponsors/sponsors';
+ // import Partners from '../sponsors/sponsors';
 import StickyNavBar from '../sticky-navbar/sticky-navbar';
 import './app.scss';
 
@@ -22,7 +22,7 @@ const App: FunctionComponent = () => (
     <Schedule events={EVENTS} />
     <Speakers />
     <Faq questionAnswers={QUESTION_ANSWERS} />
-    <Partners />
+    {/*<Partners />*/}
 
     <Footer />
   </div>

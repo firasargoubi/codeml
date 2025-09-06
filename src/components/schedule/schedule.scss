@@ -44,7 +44,7 @@
     }
     .schedule-overlay {
         align-items: center;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: $primary;
         display: flex;
         font-size: 5vw;
         font-weight: bold;
@@ -55,7 +55,7 @@
         text-align: center;
         top: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 1;
     }
 }
 
