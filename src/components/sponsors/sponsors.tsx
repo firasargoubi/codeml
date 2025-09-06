@@ -29,6 +29,8 @@ const generateLogos = (xs: string, md: string, array: Sponsor[]) => {
 
 const Partners: FunctionComponent = () => {
     const { t } = useTranslation();
+    const showSponsors = false;
+
     return (
         <div className="partners-section" id="partners">
             <ContainerHeading title={t('Partners.title')}/>
@@ -38,6 +40,11 @@ const Partners: FunctionComponent = () => {
                     {generateLogos('2', '3', GOLD)}
                     {generateLogos('3', '4', SILVER)}
                     {generateLogos('4', '5', BRONZE)}
+                    {!showSponsors && (
+                        <div className="partners-overlay">
+                            {t('Partners.comingSoon')}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
