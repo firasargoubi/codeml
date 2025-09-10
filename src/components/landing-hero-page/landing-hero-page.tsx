@@ -56,14 +56,14 @@ const LandingHeroPage: React.FC = () => {
             </h1>
             <p className="subtitle">{t('LandingHeroPage.subtitle')}</p>
             <p className="subtitle"> {t('LandingHeroPage.when')} </p>
-            <button className="register">
-              <a
-                href={REGISTRATION_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t('LandingHeroPage.register')}
-              </a>
+            <button className="register" onClick={() =>
+                  window.open(
+                    REGISTRATION_LINK,
+                    '_blank',
+                    'noopener,noreferrer',
+                  )
+                }>
+              {t('LandingHeroPage.register')}
             </button>
           </Col>
           <Col
@@ -77,14 +77,15 @@ const LandingHeroPage: React.FC = () => {
           <h1 className="title">{t('LandingHeroPage.secondTitle')}</h1>
           <p className="subtitle">{t('LandingHeroPage.subtitle')}</p>
           <p className="subtitle"> {t('LandingHeroPage.when')} </p>
-          <button className="register">
-          <a href={REGISTRATION_LINK} target="_blank" rel="noopener noreferrer">
-
-              {' '}
-              {t('LandingHeroPage.register')}{' '}
-              </a>
-
-          </button>
+            <button className="register" onClick={() =>
+                  window.open(
+                    REGISTRATION_LINK,
+                    '_blank',
+                    'noopener,noreferrer',
+                  )
+                }>
+              {t('LandingHeroPage.register')}
+            </button>
         </div>
         <Link
           className="a scroll-down"
