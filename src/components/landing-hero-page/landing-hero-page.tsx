@@ -6,7 +6,7 @@ import { Col, Row } from 'reactstrap';
 import './landing-hero-page.scss';
 
 const REGISTRATION_LINK =
-  'https://docs.google.com/forms/d/e/1FAIpQLSctJZEYjx8oTROyygyeGTppd8saPMvLELxliPYXlRYYM07z-w/viewform?usp=sf_link';
+  'https://docs.google.com/forms/d/e/1FAIpQLScD_HLcPrfZBlOHfdXX3EjNNFqgXHruW0RZrBwLMQV3hQ_8_Q/viewform?usp=sf_link';
 
 const LandingHeroPage: React.FC = () => {
   const { t } = useTranslation();
@@ -78,7 +78,7 @@ const LandingHeroPage: React.FC = () => {
           <p className="subtitle">{t('LandingHeroPage.subtitle')}</p>
           <p className="subtitle"> {t('LandingHeroPage.when')} </p>
           <button className="register">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSctJZEYjx8oTROyygyeGTppd8saPMvLELxliPYXlRYYM07z-w/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+          <a href={REGISTRATION_LINK} target="_blank" rel="noopener noreferrer">
 
               {' '}
               {t('LandingHeroPage.register')}{' '}
