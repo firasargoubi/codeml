@@ -1,3 +1,5 @@
+import LOGO_IVADO from '../sponsors/img/ivado.png';
+import LOGO_SEMLA from '../sponsors/img/semla_logo.png';
 import LOGO_ANTIDOTE from './img/2025/Logo-Antidote.svg';
 import LOGO_BNC from './img/2025/Logo-BNC.png';
 import LOGO_IRUI from './img/2025/Logo-IRUI.png';
@@ -6,9 +8,6 @@ import LOGO_POLY from './img/2025/Logo-Poly.png';
 import LOGO_PROPOLYS from './img/2025/Logo-Propolys.png';
 import LOGO_TAILED from './img/2025/Logo-Tailed.png';
 import LOGO_VIDENS from './img/2025/Logo-Videns.jpg';
-// Added external sponsor assets (outside 2025 folder)
-import LOGO_IVADO from '../sponsors/img/ivado.png';
-import LOGO_SEMLA from '../sponsors/img/semla_logo.png';
 
 export interface Sponsor {
   name: string;
