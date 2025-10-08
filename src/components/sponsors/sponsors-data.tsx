@@ -1,14 +1,11 @@
-// import AECSP from './img/AECSP.svg';
-import CN from './img/CN.png';
-import COVEO from './img/coveo.png';
-import DRUIDE from './img/druide.png';
-import ERICSON from './img/ericson.png';
-import GURU from './img/guru.png';
-import IVADO from './img/ivado.png';
-import POLY from './img/Polytechnique_logo.png';
-import SEMLA_LOGO from './img/semla_logo.png';
-import STINGRAY from './img/stingray.png';
-import TD from './img/td_logo.jpg';
+import LOGO_ANTIDOTE from './img/2025/Logo-Antidote.svg';
+import LOGO_BNC from './img/2025/Logo-BNC.png';
+import LOGO_IRUI from './img/2025/Logo-IRUI.png';
+import LOGO_PACTOLE from './img/2025/Logo-Pactole.png';
+import LOGO_POLY from './img/2025/Logo-Poly.png';
+import LOGO_PROPOLYS from './img/2025/Logo-Propolys.png';
+import LOGO_TAILED from './img/2025/Logo-Tailed.png';
+import LOGO_VIDENS from './img/2025/Logo-Videns.jpg';
 
 export interface Sponsor {
   name: string;
@@ -16,66 +13,37 @@ export interface Sponsor {
   website?: string;
 }
 
-export const PLATINUM: Sponsor[] = [];
-
-export const GOLD: Sponsor[] = [
-
+export const SPONSORS_2025: Sponsor[] = [
   {
-    name: 'IVADO',
-    imgPath: IVADO,
-    website: 'https://ivado.ca/en/',
+    name: 'Antidote',
+    imgPath: LOGO_ANTIDOTE,
   },
   {
-    name: 'CN',
-    imgPath: CN,
-    website: 'https://www.cn.ca/en/',
+    name: 'Banque Nationale',
+    imgPath: LOGO_BNC,
   },
   {
-    name: 'SEMLA',
-    imgPath: SEMLA_LOGO,
-    website: 'https://semla.quebec/en/',
+    name: 'IRUI',
+    imgPath: LOGO_IRUI,
   },
   {
-    name: 'ERICSON',
-    imgPath: ERICSON,
-    website: ' https://www.ericsson.com/en/newsroom/media-kits',
-  },
- 
-];
-
-export const SILVER: Sponsor[] = [
-  {
-    name: 'COVEO',
-    imgPath: COVEO,
-    website: 'https://www.coveo.com/en',
-  },
-];
-
-export const BRONZE: Sponsor[] = [
-  { 
-    name: 'Druide', 
-    imgPath: DRUIDE, 
-    website: 'https://www.druide.com/en/', 
-  },
- /* { 
-    name: 'AECSP', 
-    imgPath: AECSP,
-     website: 'https://aecsp.qc.ca/', 
-    },*/
-  { name: 'Guru', imgPath: GURU, website: 'https://www.guruenergy.com/en-ca' },
-  {
-    name: 'Stingray',
-    imgPath: STINGRAY,
-    website: '  https://corporate.stingray.com/media-center/',
+    name: 'Pactole',
+    imgPath: LOGO_PACTOLE,
   },
   {
-    name: 'Teledyne Dalsa',
-    imgPath: TD,
-    website: 'https://www.teledynedalsa.com/en/home/',
+    name: 'Polytechnique Montréal',
+    imgPath: LOGO_POLY,
   },
   {
-    name: 'Polytechnique Montreal',
-    imgPath: POLY,
-    website: 'https://www.polymtl.ca/',
+    name: 'Propolys',
+    imgPath: LOGO_PROPOLYS,
+  },
+  {
+    name: 'Tailed',
+    imgPath: LOGO_TAILED,
+  },
+  {
+    name: 'Videns',
+    imgPath: LOGO_VIDENS,
   },
 ];

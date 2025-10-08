@@ -3,90 +3,50 @@ import { Event } from './event-interface';
 export const EVENTS: Event[][] = [
   [
     {
-      time: '08:30 - 09:30',
+      time: '9h00 - 10h00',
       descriptioni18nKey: 'Event[0][0].description',
     },
     {
-      time: '09:30 - 10:30',
+      time: '10h00 - 11h00',
       descriptioni18nKey: 'Event[0][1].description',
     },
     {
-      time: '10:30',
+      time: '13h00',
       descriptioni18nKey: 'Event[0][2].description',
     },
     {
-      time: '10:30 - 10:45',
+      time: '13h00 - 19h00',
       descriptioni18nKey: 'Event[0][3].description',
     },
     {
-      time: '10:45 - 11:45',
+      time: '19h00',
       descriptioni18nKey: 'Event[0][4].description',
     },
     {
-      time: '12:30',
+      time: '20h00',
       descriptioni18nKey: 'Event[0][5].description',
-    },
-    {
-      time: '13:30 - 14:30',
-      descriptioni18nKey: 'Event[0][6].description',
-    },
-    {
-      time: '14:00',
-      descriptioni18nKey: 'Event[0][7].description',
-    },
-    {
-      time: '14:30 - 15:30',
-      descriptioni18nKey: 'Event[0][8].description',
-    },
-    {
-      time: '15:30 - 16:30',
-      descriptioni18nKey: 'Event[0][9].description',
-    },
-    {
-      time: '16:00',
-      descriptioni18nKey: 'Event[0][10].description',
-    },
-    {
-      time: '16:30 - 17:30',
-      descriptioni18nKey: 'Event[0][11].description',
-    },
-    {
-      time: '18:00',
-      descriptioni18nKey: 'Event[0][12].description',
-    },
-    {
-      time: '19:00 - 20:00',
-      descriptioni18nKey: 'Event[0][13].description',
-    },
-    {
-      time: '20:00',
-      descriptioni18nKey: 'Event[0][14].description',
     },
   ],
   [
     {
-      time: '8:30',
+      time: '8h30 - 10h30',
       descriptioni18nKey: 'Event[1][0].description',
     },
     {
-      time: '11:30',
+      time: '12h00',
       descriptioni18nKey: 'Event[1][1].description',
     },
     {
-      time: '12:00',
+      time: '12h30',
       descriptioni18nKey: 'Event[1][2].description',
     },
     {
-      time: '12:30 - 13:15',
+      time: '14h00 - 16h00',
       descriptioni18nKey: 'Event[1][3].description',
     },
     {
-      time: '13:30 - 14:30',
+      time: '16h00 - 17h30',
       descriptioni18nKey: 'Event[1][4].description',
-    },
-    {
-      time: '14:30',
-      descriptioni18nKey: 'Event[1][5].description',
     },
   ],
 ];

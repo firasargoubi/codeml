@@ -1,6 +1,6 @@
 @import '../../scss/variables.scss';
 .schedule {
-    background-color: $primary;
+    background-color: $app-background;
     color: white;
     font-family: 'Segoe UI';
     min-height: 100vh;
@@ -28,9 +28,9 @@
         width: 50%;
         margin: auto;
         .container {
-            background-color: $primary;
-}
-}
+            background-color: $app-background;
+        }
+    }
 
     .event {
         border-top: 1px solid white;
@@ -44,7 +44,7 @@
     }
     .schedule-overlay {
         align-items: center;
-        background-color: $primary;
+        background-color: $app-background;
         display: flex;
         font-size: 5vw;
         font-weight: bold;

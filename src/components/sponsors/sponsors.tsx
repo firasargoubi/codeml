@@ -2,48 +2,51 @@ import React, { FunctionComponent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Col, Row } from 'reactstrap';
 import ContainerHeading from '../common/container-heading';
-import { BRONZE, GOLD, PLATINUM, SILVER, Sponsor } from './sponsors-data';
+import { Sponsor, SPONSORS_2025 } from './sponsors-data';
 import './sponsors.scss';
 
-const generateLogos = (xs: string, md: string, array: Sponsor[]) => {
-    return (
-        <Row xs={xs} md={md} className="parters-center">
-                {
-                    array.map( (sponsor: Sponsor, index: number) => {
-                        return (
-                            <Col key={index} className="center-logos">
-                                {sponsor.website ?
-                                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
-                                        <img src={sponsor.imgPath} alt={sponsor.name} width="100%"/>
-                                    </a>
-                                    :
-                                    <img src={sponsor.imgPath} alt={sponsor.name} width="100%"/>
-                                }
-                            </Col>
-                        );
-                    })
-                }
-        </Row>
-    );
-};
+const generateLogos = (xs: number, md: number, logos: Sponsor[]) => (
+    <Row xs={xs} md={md} className="parters-center">
+        {logos.map((sponsor: Sponsor, index: number) => {
+            const key = `${sponsor.name}-${index}`;
+            return (
+                <Col key={key} className="center-logos">
+                    {sponsor.website ? (
+                        <a
+                            href={sponsor.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={sponsor.name}
+                        >
+                            <img src={sponsor.imgPath} alt={sponsor.name} loading="lazy" />
+                        </a>
+                    ) : (
+                        <img src={sponsor.imgPath} alt={sponsor.name} loading="lazy" />
+                    )}
+                </Col>
+            );
+        })}
+    </Row>
+);
 
 const Partners: FunctionComponent = () => {
     const { t } = useTranslation();
-    const showSponsors = false;
+    const sponsors = SPONSORS_2025;
+    const hasSponsors = sponsors.length > 0;
 
     return (
         <div className="partners-section" id="partners">
-            <ContainerHeading title={t('Partners.title')}/>
+            <ContainerHeading title={t('Partners.title')} />
             <div className="parters-center">
                 <div className="partners-logos-container">
-                    {generateLogos('1', '2', PLATINUM)}
-                    {generateLogos('2', '3', GOLD)}
-                    {generateLogos('3', '4', SILVER)}
-                    {generateLogos('4', '5', BRONZE)}
-                    {!showSponsors && (
-                        <div className="partners-overlay">
-                            {t('Partners.comingSoon')}
-                        </div>
+                    {hasSponsors && (
+                        <>
+                            <h5 className="year-label">2025</h5>
+                            {generateLogos(2, 6, sponsors)}
+                        </>
+                    )}
+                    {!hasSponsors && (
+                        <div className="partners-overlay">{t('Partners.comingSoon')}</div>
                     )}
                 </div>
             </div>

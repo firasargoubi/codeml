@@ -1,6 +1,6 @@
 @import '../../scss/variables.scss';
 .speakers {
-    background-color: $primary;
+    background-color: $app-background;
     // height: 65vh;
     width: 100%;
     padding: 5%;
@@ -15,7 +15,7 @@
         padding-bottom: 8px;
     }
     .active {
-        background-color: $primary;
+        background-color: $app-background;
     }
     h6 {
         color: white;

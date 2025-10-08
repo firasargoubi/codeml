@@ -1,8 +1,10 @@
+@import '../../scss/variables.scss';
+
 .about {
     padding-top: 1%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #000022;
+    background-color: $app-background;
     font-size: 1.5vw;
 }
 

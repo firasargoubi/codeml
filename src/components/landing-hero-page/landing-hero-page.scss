@@ -1,5 +1,7 @@
+@import '../../scss/variables.scss';
+
 canvas {
-    background-color: #000022;
+    background-color: $app-background;
 }
 
 .landing-hero-page {
@@ -14,7 +16,7 @@ canvas {
 }
 
 .bg-color-hack {
-    background-color: #000022;
+    background-color: $app-background;
 }
 
 .content {

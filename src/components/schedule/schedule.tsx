@@ -37,7 +37,7 @@ const Schedule: FunctionComponent<ScheduleProps> = ({
 
     return (
         <div className="schedule">
-            <div className="schedule-overlay">{t('Schedule.comingSoon')}</div>
+            {/* Overlay removed: showing active schedule */}
             <ContainerHeading title={t('Schedule.title')}/>
             <h5>{t('Schedule.warning')}</h5>
             <Nav tabs={true}>
