@@ -6,6 +6,9 @@ import LOGO_POLY from './img/2025/Logo-Poly.png';
 import LOGO_PROPOLYS from './img/2025/Logo-Propolys.png';
 import LOGO_TAILED from './img/2025/Logo-Tailed.png';
 import LOGO_VIDENS from './img/2025/Logo-Videns.jpg';
+// Added external sponsor assets (outside 2025 folder)
+import LOGO_IVADO from '../sponsors/img/ivado.png';
+import LOGO_SEMLA from '../sponsors/img/semla_logo.png';
 
 export interface Sponsor {
   name: string;
@@ -14,6 +17,16 @@ export interface Sponsor {
 }
 
 export const SPONSORS_2025: Sponsor[] = [
+  {
+    name: 'IVADO',
+    imgPath: LOGO_IVADO,
+    website: 'https://ivado.ca/en/',
+  },
+  {
+    name: 'SEMLA',
+    imgPath: LOGO_SEMLA,
+    website: 'https://semla.quebec/en/',
+  },
   {
     name: 'Antidote',
     imgPath: LOGO_ANTIDOTE,

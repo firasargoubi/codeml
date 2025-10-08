@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d13fbc5.css",
-    "main.js": "/static/js/main.b7083b11.js",
+    "main.css": "/static/css/main.1b4b3b45.css",
+    "main.js": "/static/js/main.5cad28a5.js",
     "static/media/backgroundImg.png": "/static/media/backgroundImg.ea60373bddf0209b64b1.png",
     "static/media/brainImage.png": "/static/media/brainImage.3bd1c289e8c023ec6e5c.png",
     "static/media/Logo-Pactole.png": "/static/media/Logo-Pactole.af1ad8e5758821514125.png",
@@ -18,18 +18,19 @@
     "static/media/semla_logo.png": "/static/media/semla_logo.147ac2a965c9fdd5d259.png",
     "static/media/topleft-icon.png": "/static/media/topleft-icon.2a9f5e25420ba00a4cdc.png",
     "static/media/topright-icon.png": "/static/media/topright-icon.c0826e6d4b0d678c9b98.png",
-    "static/media/Logo-Antidote.svg": "/static/media/Logo-Antidote.a1fafcd6c383a3322084.svg",
+    "static/media/Logo-Antidote.svg": "/static/media/Logo-Antidote.a1fafcd6c383a3322084964c1d266abc.svg",
     "static/media/Logo-Videns.jpg": "/static/media/Logo-Videns.3cf72ce2babda4510981.jpg",
+    "static/media/ivado.png": "/static/media/ivado.7ccd5d744f1dca49cba1.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.9d13fbc5.css.map": "/static/css/main.9d13fbc5.css.map",
-    "main.b7083b11.js.map": "/static/js/main.b7083b11.js.map"
+    "main.1b4b3b45.css.map": "/static/css/main.1b4b3b45.css.map",
+    "main.5cad28a5.js.map": "/static/js/main.5cad28a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d13fbc5.css",
-    "static/js/main.b7083b11.js"
+    "static/css/main.1b4b3b45.css",
+    "static/js/main.5cad28a5.js"
   ]
 }

@@ -39,12 +39,7 @@ const Partners: FunctionComponent = () => {
             <ContainerHeading title={t('Partners.title')} />
             <div className="parters-center">
                 <div className="partners-logos-container">
-                    {hasSponsors && (
-                        <>
-                            <h5 className="year-label">2025</h5>
-                            {generateLogos(2, 6, sponsors)}
-                        </>
-                    )}
+                    {hasSponsors && generateLogos(2, 6, sponsors)}
                     {!hasSponsors && (
                         <div className="partners-overlay">{t('Partners.comingSoon')}</div>
                     )}
