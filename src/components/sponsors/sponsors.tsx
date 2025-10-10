@@ -9,8 +9,9 @@ const generateLogos = (xs: number, md: number, logos: Sponsor[]) => (
     <Row xs={xs} md={md} className="parters-center">
         {logos.map((sponsor: Sponsor, index: number) => {
             const key = `${sponsor.name}-${index}`;
+            const sizeClass = sponsor.size ? `size-${sponsor.size}` : 'size-md';
             return (
-                <Col key={key} className="center-logos">
+                <Col key={key} className={`center-logos ${sizeClass}`}>
                     {sponsor.website ? (
                         <a
                             href={sponsor.website}
